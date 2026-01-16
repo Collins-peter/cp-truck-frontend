@@ -11,6 +11,7 @@ import { useRef } from "react";
 
 function Home() {
     console.log("Home is connected...");
+    console.log(import.meta.env.VITE_API_URL);
     const sideBarRef = useRef(null);
 
     //USE-REF FOR SIDEBAR
