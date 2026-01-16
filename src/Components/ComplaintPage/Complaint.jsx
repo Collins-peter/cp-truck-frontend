@@ -4,7 +4,7 @@ import { MdDashboard } from "react-icons/md";
 import { FaPlus } from "react-icons/fa";
 import Loading from "../LoadingPage/Loading";
 import { useState } from "react";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 import emailjs from "emailjs-com";
 
 import VerifyMiddleware from "../../services/VerifyMiddleware";

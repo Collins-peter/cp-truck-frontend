@@ -10,7 +10,6 @@ import { IoMenu } from "react-icons/io5";
 import { MdCancel } from "react-icons/md";
 import { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Track from "../../Track Package/Track.jsx";
 
 import { authService } from "../../../services/api.js";
 import { FiUpload } from "react-icons/fi";

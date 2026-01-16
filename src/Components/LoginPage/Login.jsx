@@ -3,6 +3,7 @@ import { authService } from "../../services/api.js";
 import { useState, useRef } from "react";
 import Loading from "../LoadingPage/Loading.jsx";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Login() {
     console.log("Login Page Connected...");
