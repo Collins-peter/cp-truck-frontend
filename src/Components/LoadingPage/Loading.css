@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.loadingView{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1C4532;
+    z-index: 999;
+    position: fixed;
+}
+.loadingContainer {
+    padding: 10px 10px;
+    font-size: xxx-large;
+    color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loadAnim 1.2s ease-in-out alternate infinite;
+}
+.firstSmoke {
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    left: 5px;
+    animation: smokeAnim 1.1s ease-in-out alternate-reverse infinite;
+}
+.secondSmoke {
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    left: 5px;
+    animation: smokeAnim 1.1s ease-in-out alternate-reverse infinite;
+}
+.thirdSmoke {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    animation: smokeAnim 1.1s ease-in-out alternate-reverse infinite;
+}
+
+@keyframes smokeAnim {
+    from {transform: scale(0.7);}
+    to {transform: scale(1);}
+}
+
+@keyframes loadAnim {
+    from {transform: translateX(-50px);}
+    to {transform: translateX(50px);}
+}

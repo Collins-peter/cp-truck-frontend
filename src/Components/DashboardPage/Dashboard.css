@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dashboardView {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content:space-between;
+    background: #F9FAFB;
+}
+.dashboardView .dashboardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 20px;
+    background: #bae9d2;
+    transform: translateX(100px);
+    opacity: 0;
+    animation: viewAnim 1.1s ease-in forwards;
+}
+.dashboardContainer p {
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.dashboardContainer .dashIcon {
+    font-size: xx-large;
+    color: #1C4532;
+    width: 90%;
+    padding: 10px 0;
+    display: flex;
+    transform: translateX(100px);
+    opacity: 0;
+    animation: viewAnim 1.1s 0.6s ease-in forwards;
+}
+.dashboardContainer p a {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px 8px;
+    border-radius: 10px;
+    font-size: larger;
+    background: green;
+    color: #fff;
+    text-align: center;
+}
+
+.dashboardContainer .areaImage {
+    border: solid 1px #fff;
+    width: 85%;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    transform: translateX(100px);
+    opacity: 0;
+    animation: viewAnim 1.1s 1s ease-in forwards;
+}
+
+.areaImage img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    object-position: 0% 100%;
+    opacity: 0;
+    position: absolute;
+    border-radius: 10px;
+    transition: 2s;
+}
+.areaImage img.active {
+    opacity: 1;
+}
+
+.dashboardContainer .dashBody {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+.dashBody div {
+    border: solid 2px green;
+    width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100px);
+    opacity: 0;
+    overflow: hidden;
+    animation: viewAnim 1.1s 0.6s ease-in forwards;
+}
+.dashBody div a{
+    width: 100%;
+    height: 30vh;
+    text-decoration: none;
+    font-size: larger;
+    color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100px);
+    opacity: 0;
+    animation: viewAnim 1.1s 0.6s ease-in forwards;
+}
+.dashBody div a img{
+    width: 80%;
+    object-fit: cover;
+}
+
+.track {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.track nav {
+    width: 100%;
+    font-size: xx-large;
+    padding-left: 50px;
+    color: red;
+}
+.track nav span {
+    width: 40px;
+    height: 40px;
+    border: solid 1px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #bae9d2;
+    cursor: pointer;
+}
+
+
+
+
+@keyframes viewAnim {
+    from {transform: translateX(100px) scale(0.8); opacity: 0; }
+    to {transform: translateX(0) scale(1); opacity: 1;}
+}
+
+@media(max-width: 750px) {
+    .dashboardView .dashboardContainer {
+        width: 100%;
+    }
+}

@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.requestView{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #bae9d2 !important;
+}
+.requestView .requestContainer {
+    box-shadow: 2px 2px 15px #1C4532;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin-top: 2%;
+    padding: 10px 20px;
+    transform: translateX(100px);
+    opacity: 0;
+    animation: reqViewAnim 1.5s ease-out forwards;
+}
+.requestContainer .dashIcon a{
+    border: solid 2px #1C4532;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    text-decoration: none;
+    color: #000;
+    background: rgb(109, 184, 109);
+    cursor: pointer;
+    transition: 0.3s;
+    transform: translateX(100px);
+    opacity: 0;
+    animation: reqViewAnim 1.5s 1s ease-out forwards;
+}
+.requestContainer .dashIcon a:hover {
+    transform: scale(1.1);
+}
+.requestContainer .requestIcon {
+    width: 100%;
+    margin-top: 1%;
+    padding: 10px 0;
+    font-size: larger;
+    color: rgb(24, 82, 24);
+}
+
+.requestContainer .requestBody {
+    margin-top: 5px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.requestBody .textWrite {
+    padding: 10px 5px;
+    font-size: larger;
+    color: #1C4532;
+}
+.requestBody .alertMsg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: 500;
+}
+
+.requestBody .textBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(100px);
+    opacity: 0;
+    animation: reqViewAnim 1.5s 1s ease-out forwards;
+}
+.textBox label {
+    padding: 2px 5px;
+}
+.textBox textarea {
+    border: solid 1px rgb(46, 77, 105);
+    border-radius: 10px;
+    width: 60%;
+    height: 80px;
+    padding: 10px 10px;
+    font-size: larger;
+    outline: none;
+}
+.textBox .sendBtn {
+    border: none;
+    width: 50px;
+    padding: 5px 5px;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: larger;
+    margin-left: 1%;
+    background: #2F855A;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.textBox .sendBtn:hover {
+    transform: scale(1.05);
+}
+
+.requestBody .areaImage {
+    padding: 1% 1%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+.areaImage div {
+    border: solid 1px #2F855A;
+    height: 150px;
+    border-radius: 10px;
+    font-size: large;
+    display: flex;
+    padding: 5px 4px;
+    background-size: cover;
+    background-position: center;
+    transform: translateX(100px);
+    opacity: 0;
+    animation: reqViewAnim 1.5s 1.2s ease-out forwards;
+}
+.areaImage div:nth-child(1) {
+    background: url(../../assets/agege.jpg);
+}
+.areaImage div:nth-child(2) {
+    background: url(../../assets/alimosho.png);
+}
+.areaImage div:nth-child(3) {
+    background: url(../../assets/apapa.jpg);
+}
+.areaImage div:nth-child(4) {
+    background: url(../../assets/badagry.jpg);
+}
+.areaImage div:nth-child(5) {
+    background: url(../../assets/epe.jpg);
+}
+.areaImage div:nth-child(6) {
+    background: url(../../assets/eti-osa.jpg);
+}
+.areaImage div:nth-child(7) {
+    background: url(../../assets/ibeju-lekki.jpg);
+}
+.areaImage div:nth-child(8) {
+    background: url(../../assets/lagos-island.jpg);
+}
+.areaImage div:nth-child(9) {
+    background: url(../../assets/ojo.jpg);
+}
+.areaImage div:nth-child(10) {
+    background: url(../../assets/mushin.jpg);
+}
+.areaImage div:nth-child(11) {
+    background: url(../../assets/shomolu.jpg);
+}
+.areaImage div:nth-child(12) {
+    background: url(../../assets/surulere.jpg);
+}
+.areaImage div:nth-child(13) {
+    background: url(../../assets/mainland.jpg);
+}
+.areaImage div:nth-child(14) {
+    background: url(../../assets/ikorodu.jpg);
+}
+.areaImage div:nth-child(15) {
+    background: url(../../assets/ikeja.jpg);
+}
+
+
+@keyframes reqViewAnim {
+    from {transform: translateX(100px) scale(0.8); opacity: 0; }
+    to {transform: translateX(0) scale(1); opacity: 1;}
+}
+
+
+@media (max-width: 700px) {
+    .textBox textarea{
+        width: 60%;
+    }
+    .requestView .requestContainer {
+        width: 85%;
+    }
+}
