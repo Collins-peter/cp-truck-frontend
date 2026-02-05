@@ -9,11 +9,13 @@ import Motobike from "./Components/MotoBikePage/Motobike.jsx";
 import Bus from "./Components/BusPage/Bus.jsx";
 import Track from "./Components/Track Package/Track.jsx";
 
-
+//********ADMIN IMPORTS***********/
+import TrackPackage from "./Components/Admin Tracking/Track Package/TrackPackage.jsx";
+import TrackerGen from "./Components/Admin Tracking/Tracker Generator/TrackGen.jsx";
+import UpdateStatus from "./Components/Admin Tracking/Update Status/UpdateStatus.jsx";
 
 //IMPORT REACT-ROOUTER-DOM
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Order from "./Components/OrderPage/Order.jsx";
 
 
 //CREATING A ROUTER
@@ -57,7 +59,22 @@ const router = createBrowserRouter([
   {
     path: "/trackpackage",
     element: <div> <Track/> </div>
-  }
+  },
+
+  //**************ADMIN ROUTER**********//
+
+  {
+    path:"/admin.track-generator",
+    element: <div> <TrackPackage/> </div>
+  },
+  {
+    path:"/admin.track-package",
+    element: <div> <TrackPackage/> </div>
+  },
+  {
+    path:"/admin.update-status",
+    element: <div> <UpdateStatus/> </div>
+  },
 ])
 
 function App() {
