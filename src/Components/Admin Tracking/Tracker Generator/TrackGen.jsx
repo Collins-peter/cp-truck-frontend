@@ -1,4 +1,4 @@
-import "./TrackerGen.css";
+import "./TrackGen.css";
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { authService } from "../../../services/api.js"
