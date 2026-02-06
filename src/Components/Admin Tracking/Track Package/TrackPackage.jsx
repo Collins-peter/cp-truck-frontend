@@ -1,7 +1,7 @@
 import "./TrackPackage.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { authService } from "../../service/api";
+import { authService } from "../../../services/api.js"
 
 
 function TrackPackage() {
@@ -47,8 +47,8 @@ function TrackPackage() {
             <div className="trackPackageContainer">
                 <h4>Track Package
                     <div>
-                        <Link to="/">Create Package</Link>
-                        <Link to="/updatestatus">Update Status</Link>
+                        <Link to="/admin.create-package">Create Package</Link>
+                        <Link to="/admin.update-status">Update Status</Link>
                     </div>
                 </h4>
 

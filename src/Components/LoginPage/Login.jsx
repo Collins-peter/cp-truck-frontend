@@ -39,7 +39,7 @@ function Login() {
         setLoading(false);
 
         if (result.success) {
-            setMessage("Login Successfully")
+            setMessage(result.data)
          //CLEAR LOGIN FORM
             setUserName("");
             setPassword("");

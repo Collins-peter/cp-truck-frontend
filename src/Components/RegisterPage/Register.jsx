@@ -50,7 +50,7 @@ function Register() {
 
         if (result.success) {
             alertMsgRef.current.style.color = "green";
-            setMessage("Registration successful!");
+            setMessage(result.data);
             // CLEAR FORM ON SUCCESS
             setUserName("");
             setEmail("");

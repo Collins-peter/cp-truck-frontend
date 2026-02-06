@@ -61,11 +61,11 @@ const router = createBrowserRouter([
     element: <div> <Track/> </div>
   },
 
+  
   //**************ADMIN ROUTER**********//
-
   {
-    path:"/admin.track-generator",
-    element: <div> <TrackPackage/> </div>
+    path:"/admin.create-package",
+    element: <div> <TrackerGen/> </div>
   },
   {
     path:"/admin.track-package",

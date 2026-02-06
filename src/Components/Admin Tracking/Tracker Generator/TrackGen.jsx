@@ -1,7 +1,7 @@
 import "./TrackerGen.css";
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { authService } from "../../service/api.js";
+import { authService } from "../../../services/api.js"
 
 function TrackerGen() {
     const [sender, setSender] = useState("");
@@ -63,8 +63,8 @@ function TrackerGen() {
             <div className="trackerContainer">
                 <h4>CREATE PACKAGE
                     <div>
-                        <Link to="/trackpackage">Track Package</Link>
-                        <Link to="/updatestatus">Update Status</Link>
+                        <Link to="/admin.track-package">Track Package</Link>
+                        <Link to="/admin.update-status">Update Status</Link>
                     </div>
                 </h4>
                 <form onSubmit={createPackage}>

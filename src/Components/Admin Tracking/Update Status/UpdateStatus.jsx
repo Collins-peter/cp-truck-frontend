@@ -1,8 +1,8 @@
 import "./UpdateStatus.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { authService } from "../../service/api.js";
-import { socket } from "../../service/socket.js";
+import { authService } from "../../../services/api.js"
+import { socket } from "../../../services/socket.js"
 
 
 function UpdateStatus() {
@@ -63,8 +63,8 @@ function UpdateStatus() {
             <div className="statusContainer">
                 <h4>Update Status 
                     <div>
-                        <Link to="/">Create Package</Link>
-                        <Link to= "/trackpackage">Track Package</Link>
+                        <Link to="/admin.create-package">Create Package</Link>
+                        <Link to= "/admin.track-package">Track Package</Link>
                     </div>
                 </h4>
                 <form onSubmit={updateBtn}>
