@@ -11,7 +11,7 @@ import Track from "./Components/Track Package/Track.jsx";
 
 //********ADMIN IMPORTS***********/
 import TrackPackage from "./Components/Admin Tracking/Track Package/TrackPackage.jsx";
-import TrackerGen from "./Components/Admin Tracking/Tracker Generator/TrackGen.jsx";
+import TrackGen from "./Components/Admin Tracking/Tracker Generator/TrackGen.jsx";
 import UpdateStatus from "./Components/Admin Tracking/Update Status/UpdateStatus.jsx";
 
 //IMPORT REACT-ROOUTER-DOM
@@ -65,7 +65,7 @@ const router = createBrowserRouter([
   //**************ADMIN ROUTER**********//
   {
     path:"/admin.create-package",
-    element: <div> <TrackerGen/> </div>
+    element: <div> <TrackGen/> </div>
   },
   {
     path:"/admin.track-package",

@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { authService } from "../../../services/api.js"
 
-function TrackerGen() {
+function TrackGen() {
     const [sender, setSender] = useState("");
     const [receiver, setReceiver] = useState("");
     const [description, setDescription] = useState("");
@@ -102,4 +102,4 @@ function TrackerGen() {
     );
 }
 
-export default TrackerGen;
+export default TrackGen;
